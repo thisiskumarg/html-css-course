@@ -1,0 +1,13 @@
+body {
+    font-family: Montserrat;
+    text-align: center;
+}
+
+.head {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.des {
+    text-decoration: underline;
+}
