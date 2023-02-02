@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Challenge Exercise - 8</title>
+  <style>
+    body {
+      font-family: Arial;
+    }
+
+    hr {
+      margin: 30px 0 30px 0;
+    }
+
+    .first-name, .last-name, .email {
+      border: 1px solid rgb(202, 202, 202);
+      height: 10px;
+      width: 200px;
+      padding: 20px;
+      font-size: 15px;
+      border-radius: 10px;
+    }
+
+    .email {
+      display: block;
+      margin: 15px 0 15px 0;
+    }
+
+    .sign-up {
+      width: 490px;
+      height: 50px;
+      font-size: 17px;
+      background-color: rgb(101, 101, 255);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .sign-up:hover {
+      opacity: 0.8;
+    }
+
+    .sign-up:active {
+      opacity: 0.6;
+    }
+
+    .uber-title {
+      font-size: 40px;
+      margin: 0 0 30px 0;
+    }
+
+    .uber-pickup, .uber-dest {
+      background-color: whitesmoke;
+      border: none;
+      color: rgb(85, 85, 85);
+      display: block;
+      width: 400px;
+      height: 40px;
+      padding: 8px 0px 8px 20px;
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+
+    .uber-request-button, .uber-schedule-button {
+      background-color: black;
+      color: white;
+      padding: 10px;
+      font-size: 15px;
+      width: 130px;
+      margin: 50px 20px 0 0;
+    }
+
+    .uber-schedule-button {
+      background-color: whitesmoke;
+      color: black;
+      border: none;
+      width: 160px;
+      padding: 12px;
+    }
+  </style>
+</head>
+<body>
+  <input class="first-name" type="text" placeholder="First Name">
+  <input class="last-name" type="text" placeholder="Last Name">
+  <input class="email" type="text" placeholder="Email">
+  <button class="sign-up">
+    Sign Up
+  </button>
+
+  <hr>
+
+  <p class="uber-title">
+    Request a ride now
+  </p>
+
+  <input class="uber-pickup" type="text" placeholder="Enter pickup location">
+  <input class="uber-dest" type="text" placeholder="Enter destination">
+
+  <button class="uber-request-button">
+    Request now
+  </button>
+
+  <button class="uber-schedule-button">
+    Schedule for later
+  </button>
+</body>
+</html>
