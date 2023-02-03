@@ -60,9 +60,59 @@
       display: inline-block;
       margin-right: 10px;
     }
+
+    .content-2 {
+      text-align: center;
+    }
+
+    .google-logo {
+      display: block;
+      margin: 0 auto 0 auto;
+      height: 100px;
+      width: 400px;
+      object-fit: contain;
+    }
+
+    .search-bar {
+      display: block;
+      margin: 20px auto 40px auto;
+      padding-left: 20px;
+      font-size: 17px;
+      width: 600px;
+      height: 40px;
+      border: none;
+      border-radius: 20px;
+      box-shadow: 3px 3px 5px rgb(219, 219, 219), -3px -3px 5px rgb(219, 219, 219);
+    }
+
+    .google-search-button, .google-lucky-button {
+      background-color: whitesmoke;
+      border: none;
+      padding: 10px;
+      width: 180px;
+      font-size: 20px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
+  <div class="content-2">
+    <img class="google-logo" src="google-logo-1.png">
+
+    <input class="search-bar" type="text" placeholder="Search Google or type a URL">
+
+    <button class="google-search-button">
+      Google Search
+    </button>
+    
+    <button class="google-lucky-button">
+      I'm Feeling Lucky
+    </button>
+  </div>
+
+  <hr>
+
   <div class="content-1">
     <img class="image-11" src="cat-image.jpg">
 
