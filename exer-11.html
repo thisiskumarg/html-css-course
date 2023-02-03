@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<head>
+  <title>Exercise - 11</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: Roboto, Arial;
+    }
+
+    hr {
+      margin: 30px 0 30px 0;
+    }
+
+    .colums-grid-1 {
+      display: grid;
+      grid-template-columns: 200px 75px;
+    }
+
+    .column-1 {
+      background-color: lightblue;
+    }
+
+    .column-2 {
+      background-color: lightpink;
+    }
+
+    .columns-grid-2 {
+      display: grid;
+      grid-template-columns: 50px 1fr 75px;
+    }
+
+    .col1 {
+      background-color: lightblue;
+    }
+
+    .col2 {
+      background-color: lightpink;
+    }
+
+    .col3 {
+      background-color: lightblue;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      column-gap: 20px;
+      row-gap: 10px;
+    }
+
+    .main-grid {
+      display: grid;
+      grid-template-columns: 200px 200px 200px;
+      column-gap: 20px;
+    }
+
+    .main-grid-1 {
+      width: 200px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .image-11 {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .text-11 {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 5px 0 0 8px;
+    }
+
+    .text-12 {
+      color: rgb(100, 100, 100);
+    }
+
+    .button-11 {
+      background-color: rgb(24, 119, 242);
+      color: white;
+      border: none;
+      padding: 8px 20px 8px 20px;
+      margin: 0 0 10px 8px;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .button-11:hover {
+      opacity: 0.8;
+    }
+
+    .button-11:active {
+      opacity: 0.4;
+    }
+
+    .profile-pic {
+      width: 28px;
+      height: 28px;
+      object-fit: cover;
+      border-radius: 14px;
+    }
+
+    .mutual-friends-row {
+      margin-left: 8px;
+      display: grid;
+      grid-template-columns: 35px 1fr;
+      align-items: center;
+      column-gap: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="colums-grid-1">
+    <div class="column-1">
+      200px
+    </div>
+
+    <div class="column-2">
+      75px
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="columns-grid-2">
+    <div class="col1">
+      col1
+    </div>
+
+    <div class="col2">
+      col2
+    </div>
+
+    <div class="col3">
+      col3
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="grid-3">
+    <div class="col2">
+      col1
+    </div>
+    
+    <div class="col2">
+      col2
+    </div>
+
+    <div class="col2">
+      col3
+    </div>
+
+    <div class="col2">
+      col4
+    </div>
+
+    <div class="col2">
+      col1
+    </div>
+
+    <div class="col2">
+      col2
+    </div>
+
+    <div class="col2">
+      col3
+    </div>
+
+    <div class="col2">
+      col4
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="main-grid">
+    <div class="main-grid-1">
+      <img class="image-11" src="cat-image.jpg">
+    
+      <p class="text-11">
+        Oliver
+      </p>
+
+      <div class="mutual-friends-row">
+        <img class="profile-pic" src="cat-image-2.jpg">
+
+        <p class="text-12">
+          2 mutual friends
+        </p>
+      </div>
+
+      <button class="button-11">
+        Add Friend
+      </button>
+    </div>
+
+    <div class="main-grid-1">
+      <img class="image-11" src="cat-image-2.jpg">
+
+      <p class="text-11">
+        Mimi
+      </p>
+
+      <div class="mutual-friends-row">
+        <img class="profile-pic" src="cat-image-2.jpg">
+
+        <p class="text-12">
+          3 mutual friends
+        </p>
+      </div>
+
+      <button class="button-11">
+        Add Friend
+      </button>
+    </div>
+
+    <div class="main-grid-1">
+      <img class="image-11" src="dog-image-1.jpg">
+
+      <p class="text-11">
+        Rex
+      </p>
+
+      <div class="mutual-friends-row">
+        <img class="profile-pic" src="cat-image-2.jpg">
+
+        <p class="text-12">
+          4 mutual friends
+        </p>
+      </div>
+
+      <button class="button-11">
+        Add Friend
+      </button>
+    </div>
+  </div>
+</body>
+</html>

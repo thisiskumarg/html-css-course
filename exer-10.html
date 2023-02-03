@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercise - 10</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    p, button {
+      font-family: Roboto, Arial;
+      margin: 0;
+      line-height: 25px;
+    }
+
+    hr {
+      margin: 30px 0 30px 0;
+    }
+
+    .row, .logo-row, .content-row, .follow-button-row {
+      height: 100px;
+    }
+
+    .logo-row, .content-row, .follow-button-row {
+      display: inline-block;
+    }
+
+    .logo-row {
+      margin-right: 10px;
+      vertical-align: top;
+    }
+
+    .content-row {
+      margin: 10px;
+      margin-right: 150px;
+      vertical-align: middle;
+    }
+
+    .follow-button-row {
+      vertical-align: top;
+      margin-top: -20px;
+    }
+
+    .logo {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 30px;
+      margin-top: 15px;
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .des, .tag {
+      color: rgb(179, 179, 179);
+    }
+
+    .follow-button {
+      background-color: rgb(24, 119, 242);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      height: 40px;
+      width: 90px;
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 50px;
+      cursor: pointer;
+    }
+
+    .content-1 {
+      width: 200px;
+      box-shadow: 3px 3px 3px rgb(214, 214, 214), -3px -3px 3px rgb(214, 214, 214);
+      margin-left: 10px;
+      display: inline-block;
+      margin-right: 15px;
+      vertical-align: top;
+    }
+    
+    .image-11 {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      margin-bottom: 12px;
+    }
+
+    .text-11 {
+      font-size: 15px;
+      font-weight: bold;
+      margin-left: 8px;
+      margin-bottom: 5px;
+    }
+
+    .text-12 {
+      display: inline-block;
+      vertical-align: middle;
+      color: rgb(100, 100, 100);
+    }
+
+    .button-11 {
+      margin: 0 0 10px 10px;
+      background-color: rgb(24, 119, 242);
+      color: white;
+      border: none;
+      padding: 8px 20px 8px 20px;
+      margin: 0 0 10px 8px;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .button-11:hover {
+      opacity: 0.8;
+    }
+
+    .button-11:active {
+      opacity: 0.4;
+    }
+
+    .profile-pic {
+      width: 28px;
+      height: 28px;
+      object-fit: cover;
+      border-radius: 14px;
+      vertical-align: middle;
+      margin-right: 4px;
+    }
+
+    .mutual-friends-row {
+      margin-left: 8px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="content-1 styles">
+    <img class="image-11" src="cat-image.jpg">
+    
+    <p class="text-11">
+      Oliver
+    </p>
+
+    <div class="mutual-friends-row">
+      <img class="profile-pic" src="cat-image-2.jpg">
+
+      <p class="text-12">
+        2 mutual friends
+      </p>
+    </div>
+
+    <button class="button-11">
+      Add Friend
+    </button>
+  </div>
+
+  <div class="content-1 styles">
+    <img class="image-11" src="cat-image-2.jpg">
+
+    <p class="text-11">
+      Mimi
+    </p>
+
+    <div class="mutual-friends-row">
+      <img class="profile-pic" src="cat-image-2.jpg">
+
+      <p class="text-12">
+        3 mutual friends
+      </p>
+    </div>
+
+    <button class="button-11">
+      Add Friend
+    </button>
+  </div>
+
+  <div class="content-1 styles">
+    <img class="image-11" src="dog-image-1.jpg">
+
+    <p class="text-11">
+      Rex
+    </p>
+
+    <div class="mutual-friends-row">
+      <img class="profile-pic" src="cat-image-2.jpg">
+
+      <p class="text-12">
+        4 mutual friends
+      </p>
+    </div>
+
+    <button class="button-11">
+      Add Friend
+    </button>
+  </div>
+  
+  <hr>
+
+  <div class="row">
+    <div class="logo-row">
+      <img class="logo" src="cat-image.jpg">
+    </div>
+
+    <div class="content-row">
+      <p class="title">
+        Oliver
+      </p>
+
+      <p class="des">
+        the cat
+      </p>
+
+      <p class="tag">
+        Popular
+      </p>
+    </div>
+
+    <div class="follow-button-row">
+      <button class="follow-button">
+        Follow
+      </button>
+    </div>
+  </div>
+</body>
+</html>
