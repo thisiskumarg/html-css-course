@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+  <title>Exercise - 13</title>
+  <style>
+    hr {
+      margin: 30px 0 30px 0;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .main-div {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .first {
+      width: 100px;
+      height: 50px;
+      background-color: lightpink;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .text {
+      background-color: black;
+      color: white;
+    }
+    
+    .second {
+      width: 200px;
+      height: 50px;
+      background-color: lightblue;
+    }
+
+    .second-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: black;
+    }
+  </style>
+</head>
+<body>
+  <div class="main-div">
+    <div class="first">
+      <span class="text">item1</span>
+    </div>
+    <div class="second"></div>
+  </div>
+
+  <hr>
+
+  <div class="main-div">
+    <div class="first"></div>
+    <div class="second">
+      <p>row1</p>
+      <div class="second-content">
+        <p class="text">item1</p>
+        <p class="text">item2</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

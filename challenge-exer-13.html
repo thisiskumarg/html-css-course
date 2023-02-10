@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<head>
+  <title>Challenge Exercise - 13</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: Roboto, Arial;
+    }
+
+    hr {
+      margin: 30px 0 30px 0;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .main-layout {
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+      width: 400px;
+      padding: 10px 15px 10px 15px;
+      border-radius: 4px;
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+
+    .head {
+      font-size: 14px;
+      color: rgb(120, 120, 120);
+      margin-bottom: 20px;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 20px;
+    }
+
+    .cat-image {
+      height: 50px;
+      width: 50px;
+      object-fit: cover;
+      border-radius: 25px;
+    }
+
+    .right-part {
+      margin-left: 10px;
+      flex: 1;
+    }
+
+    .title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .upper-part {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 3px;
+    }
+
+    .title-part {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .des, .time {
+      color: rgb(120, 120, 120);
+    }
+
+    .time {
+      font-size: 14px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      font-size: 18px;
+      width: 320px;
+      margin-top: 10px;
+      margin-left: 20px;
+    }
+
+    .profile-pic {
+      height: 70px;
+      width: 70px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .left-container {
+      margin-right: 10px;
+    }
+
+    .right-container {
+      flex: 1;
+    }
+
+    .userid {
+      font-weight: bold;
+      margin-right: 5px;
+    }
+
+    .handle {
+      color: rgb(111, 111, 111);
+    }
+    
+    .right-content {
+      line-height: 20px;
+      margin-bottom: 15px;
+    }
+
+    .tab {
+      margin-top: 5px;
+      display: flex;
+      flex-direction: row;
+      border: 1px solid rgb(220, 220, 220);
+      border-radius: 20px;
+      width: 400px;
+      height: 100px;
+      align-items: center;
+      overflow: hidden;
+    }
+    
+    .left-tab {
+      height: 100px;
+      width: 100px;
+      background-color: rgb(220, 220, 220);
+      margin-right: 10px;
+    }
+    
+    .right-tab {
+      flex: 1;
+    }
+    
+    .website {
+      color: rgb(111, 111, 111);
+      margin-bottom: 3px;
+    }
+
+    .web-des {
+      line-height: 22px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left-container">
+      <img src="cat-image.jpg" class="profile-pic">
+    </div>
+    <div class="right-container">
+      <p>
+        <span class="userid">
+          supersimple.dev
+        </span>
+        <span class="handle">&#x40;SuperSimpleDev</span>
+      </p>
+      <div class="right-content">
+        What is backend web development? A complete overview. New Video is up!
+      </div>
+      <div class="tab">
+        <div class="left-tab"></div>
+        <div class="right-tab">
+          <div class="website">
+            youtube.com
+          </div>
+          <div class="web-des">
+            Backend web development - a complete overview (2021)
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="main-layout">
+    <div class="head">
+      ALL INBOXES
+    </div>
+    <div class="content">
+      <div class="left-part">
+        <img class="cat-image" src="cat-image.jpg">
+      </div>
+      <div class="right-part">
+        <div class="upper-part">
+          <div class="title">
+            Chewy Promotions
+          </div>
+          <div class="time">
+            4&#x3a;58 PM
+          </div>
+        </div>
+        <div class="title-part">
+          Biggest sales of the year!
+        </div>
+        <div class="des">
+          Hey there! We're writing to tell about our...
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="left-part">
+        <img class="cat-image" src="dog-image-1.jpg">
+      </div>
+      <div class="right-part">
+        <div class="upper-part">
+          <div class="title">
+            Best Buy
+          </div>
+          <div class="time">
+            12&#x3a;32 PM
+          </div>
+        </div>
+        <div class="title-part">
+          Your Best Buy eReceipt
+        </div>
+        <div class="des">
+          Thank you for shopping at Best Buy, here is...
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="left-part">
+        <img class="cat-image" src="cat-image-1.webp">
+      </div>
+      <div class="right-part">
+        <div class="upper-part">
+          <div class="title">
+            Netflix
+          </div>
+          <div class="time">
+            9&#x3a;00 AM
+          </div>
+        </div>
+        <div class="title-part">
+          Here's what's coming soon to Netflix
+        </div>
+        <div class="des">
+          Brand new movies and shows, old favorites...
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="main-layout">
+    <div class="head">
+      ALL INBOXES
+    </div>
+    <div class="content">
+      <div class="left-part">
+        <img class="cat-image" src="cat-image.jpg">
+      </div>
+      <div class="right-part">
+        <div class="upper-part">
+          <div class="title">
+            Chewy Promotions
+          </div>
+          <div class="time">
+            4&#x3a;58 PM
+          </div>
+        </div>
+        <div class="title-part">
+          Biggest sales of the year!
+        </div>
+        <div class="des">
+          Hey there! We're writing to tell about our...
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
