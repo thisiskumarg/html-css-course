@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Challenge Exercise - 14e</title>
+  <style>
+    body {
+      height: 3000px;
+      font-family: Roboto, Arial;
+    }
+
+    .header {
+      position: fixed;
+      top: 0;
+      left: 100px;
+      right: 100px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .left-header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .cat-image {
+      height: 40px;
+      width: 40px;
+      object-fit: cover;
+      border-radius: 20px;
+      margin-right: 10px;
+    }
+
+    .header-title {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .left-button, .right-button {
+      background-color: rgb(24, 119, 242);
+      border: none;
+      color: white;
+      height: 35px;
+      width: 90px;
+      border-radius: 7px;
+      font-family: Roboto, Arial;
+    }
+
+    .right-button {
+      background-color: rgb(230, 230, 230);
+      color: black;
+      margin-left: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="left-header">
+      <img src="cat-image.jpg" class="cat-image">
+      <div class="header-title">
+        Oliver Cat
+      </div>
+    </div>
+    <div class="right-header">
+      <button class="left-button">Add Friend</button>
+      <button class="right-button">Message</button>
+    </div>
+  </div>
+</body>
+</html>
