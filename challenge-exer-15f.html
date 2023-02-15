@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Challenge Exercise - 15f</title>
+  <style>
+    body {
+      height: 3000px;
+    }
+
+    .image-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    .image {
+      height: 300px;
+      width: 300px;
+    }
+
+    .discount {
+      position: absolute;
+      background-color: black;
+      color: white;
+      top: 10px;
+      right: 0;
+      padding: 8px 12px 8px 12px;
+    }
+
+    .cart {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 80px;
+      background-color: rgba(255, 255, 255, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .cart-button {
+      background-color: white;
+      border: 1px solid black;
+      padding: 10px 15px 10px 15px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="image-container">
+    <img src="shirt_image.jpg" class="image">
+    <div class="discount">
+      20% OFF
+    </div>
+    <div class="cart">
+      <button class="cart-button">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</body>
+</html>
