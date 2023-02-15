@@ -29,10 +29,11 @@
 .search-bar {
   flex: 1;
   height: 37px;
-  padding-left: 10px;
+  padding-left: 12px;
   font-size: 15px;
-  border: 1px solid rgb(192, 192, 192);
-  border-radius: 2px;
+  border: 1px solid #cccccc;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
   box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
   width: 0;
 }
@@ -42,18 +43,63 @@
   font-size: 15px;
 }
 
+.search-bar:active {
+  border: 1px solid rgb(111, 111, 255);
+}
+
 .search-button {
-  height: 40px;
+  height: 41px;
   width: 60px;
   background-color: rgb(240, 240, 240);
   border: 1px solid rgb(192, 192, 192);
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
   margin-left: -1px;
   margin-right: 10px;
 }
 
-.search-icon {
+.search-button,
+.voice-search-button,
+.upload-icon-container,
+.youtube-apps-container,
+.notifications-icon-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.upload-icon-container .tooltip,
+.youtube-apps-container .tooltip,
+.notifications-icon-container .tooltip {
+  font-family: Roboto, Arial;
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding: 4px 8px 4px 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.youtube-apps-container:hover .tooltip,
+.notifications-icon-container:hover .tooltip {
+  opacity: 1;
+}
+
+.search-icon,
+.voice-search-icon {
   height: 25px;
-  margin-top: 4px;
 }
 
 .voice-search-button {
@@ -64,14 +110,9 @@
   background-color: rgb(248, 248, 248);
 }
 
-.voice-search-icon {
-  height: 25px;
-  margin-top: 4px;
-}
-
 .hamburger-menu {
   height: 20px;
-  margin: 0 20px 0 24px;
+  margin: 0 24px 0 24px;
   height: 24px;
 }
 
@@ -84,7 +125,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-right: 20px;
+  margin-right: 24px;
   flex-shrink: 0;
 }
 
@@ -101,12 +142,9 @@
 }
 
 .current-user-picture {
-  height: 36px;
+  height: 32px;
   border-radius: 16px;
-}
-
-.notifications-icon-container {
-  position: relative;
+  cursor: pointer;
 }
 
 .notifications-count {
@@ -116,7 +154,7 @@
   background-color: rgb(200, 0, 0);
   color: white;
   font-family: Roboto, Arial;
-  font-size: 12px;
+  font-size: 10px;
   padding: 2px 5px 2px 5px;
   border-radius: 10px;
 }
