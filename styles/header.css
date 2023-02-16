@@ -39,7 +39,6 @@
 }
 
 .search-bar::placeholder {
-  font-family: Roboto, Arial;
   font-size: 15px;
 }
 
@@ -75,7 +74,6 @@
 .upload-icon-container .tooltip,
 .youtube-apps-container .tooltip,
 .notifications-icon-container .tooltip {
-  font-family: Roboto, Arial;
   position: absolute;
   background-color: gray;
   color: white;
@@ -114,10 +112,12 @@
   height: 20px;
   margin: 0 24px 0 24px;
   height: 24px;
+  cursor: pointer;
 }
 
 .youtube-logo {
   height: 20px;
+  cursor: pointer;
 }
 
 .right-section {
@@ -153,7 +153,6 @@
   right: -5px;
   background-color: rgb(200, 0, 0);
   color: white;
-  font-family: Roboto, Arial;
   font-size: 10px;
   padding: 2px 5px 2px 5px;
   border-radius: 10px;
